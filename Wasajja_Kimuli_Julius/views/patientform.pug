@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Registration Form
+  link(rel='stylesheet' type='text/css' href='../css/form.css')
+  link(rel='stylesheet' type='text/css' href='../css/bootstrapcss/bootstrap.css')
+  style.
+    html {
+    font-family: sans-serif;
+    color: #333;
+    }
+    /* div,
+    article {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dedede;
+    } */
+.container
+  .row
+    .col
+      form#coronaform(action='' method='post' name='coronaform')
+        .container
+          .row
+            .col-lg-4
+              img(src='../images/uganda-flag-part.png' alt='' width='100%' height='50%')
+            .col-lg-4
+              img(src='../images/uganda-coat_of_arms.png' alt='' width='50%' height='100%')
+            .col-lg-4
+              img(src='../images/uganda-flag-part.png' alt='' width='100%' height='50%')
+        div
+          h6(style='text-align: center;')
+            | Ministry of Health
+        div
+          h3(style='text-align: center;')
+            | COVID19(CORONA VIRUS)
+        div
+          h6(style='text-align: center;')
+            | Virus-Test Registration Form
+        .form-row
+          .form-group.col-md-6
+            label(for='surname ') Sur Name
+            input#surname.form-control(type='text' name='surname')
+            #surnameErr.error(style='color:red;')
+          .form-group.col-md-6
+            label(for='givenname ') Given name
+            input#givenname.form-control(type='text' name='givenname')
+            #givennameErr.error(style='color:red;')
+        .form-row
+          .form-group.col-md-6
+            label(for='dob') Date of Birth
+            input#dob.form-control(type='date' name='dob')
+            #dobErr.error(style='color:red;')
+          .form-group.col-md-6
+            label(for='residence') Place of Residence
+            input#residence.form-control(type='text' name='residence')
+            #residenceErr.error(style='color:red;')
+        .form-row
+          .form-group.col-md-6
+            label(for='occupation') Occupation
+            input#dob.form-control(type='occupation' name='occupation')
+            #occupationErr.error(style='color:red;')
+          .form-group.col-md-6
+            label(for='nationality') Nationality
+            input#nationality.form-control(type='text' name='nationality')
+            #nationalityErr.error(style='color:red;')
+        .row
+          .col
+            label(for='gender') Gender
+        .form-row
+          .form-group.col-md-6
+            div
+              input(type='radio' checked value='Male' name='gender')
+              | Male
+          .form-group.col-md-6
+            input(type='radio' value='Female' name='gender')
+            | Female
+        #genderErr.error(style='color:red;')
+        .form-row
+          .form-group.col-md-12
+            label(for='name') Categories
+            select.form-control(name='category' id='')
+              option(value='' default='') --Select Category--
+              option(value='Returnee') Returnee
+              option(value='Contact') Contact
+              option(value='Alert') Alert
+              option(value='Volunteer') Volunteer
+            #categoryErr.error(style='color:red;')
+        .row
+          .col
+            p(align='right')
+              input(type='submit' value='Submit' style='background-color:blue; color:white;')
+script(src='/public/js/bootstrapjs/popper.min.js')
+script(src='/public/js/bootstrapjs/jquery-3.5.1.slim.min.js')
+script(src='../js/bootstrapjs/bootstrap.js')
+script(src='../js/validation/validation.js')

@@ -1,0 +1,32 @@
+ html {
+     font-family: sans-serif;
+     color: #333;
+ }
+ 
+ body {
+     max-width: auto;
+     margin: 0 auto;
+     padding: 0 auto;
+ }
+ /* .content {
+     max-width: 500px;
+     margin: auto;
+     background: white;
+     padding: 10px;
+ } */
+ 
+ div,
+ article {
+     padding: 3px;
+     margin: auto;
+     border: 1px solid #dedede;
+ }
+ 
+ .form-group {
+     border: 0px solid #dedede;
+ }
+ 
+ label {
+     color: black;
+     font-weight: bold;
+ }

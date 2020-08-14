@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrapcss/bootstrap.css">
+
+    <style>
+        html {
+            font-family: sans-serif;
+            color: #333;
+        }
+        /* div,
+        article {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #dedede;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="" method="post" class="" id="coronaform" name="coronaform">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="../public/images/uganda-flag-part.png" alt="" width="100%" height="50%">
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="../public/images/uganda-coat_of_arms.png" alt="" width="50%" height="100%">
+                            </div>
+
+                            <div class="col-lg-4">
+                                <img src="../public/images/uganda-flag-part.png" alt="" width="100%" height="50%">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h6 style="text-align: center;">
+                            Ministry of Health
+                        </h6>
+                    </div>
+                    <div>
+                        <h3 style="text-align: center;">
+                            COVID19(CORONA VIRUS)
+                        </h3>
+                    </div>
+                    <div>
+                        <h6 style="text-align: center;">
+                            Virus-Test Registration Form
+                        </h6>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-6">
+                            <label for="surname ">Sur Name</label>
+                            <input type="text" class="form-control" id="surname" name="surname">
+                            <div class="error" style="color:red;" id="surnameErr"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="givenname ">Given name</label>
+                            <input type="text" class="form-control" id="givenname" name="givenname">
+                            <div class="error" style="color:red;" id="givennameErr"></div>
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-6 ">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" name="dob ">
+                            <div class="error" style="color:red;" id="dobErr"></div>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="residence">Place of Residence</label>
+                            <input type="text" class="form-control" id="residence" name="residence">
+                            <div class="error" style="color:red;" id="residenceErr"></div>
+
+                        </div>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-md-6 ">
+                            <label for="occupation">Occupation</label>
+                            <input type="occupation" class="form-control" id="dob" name="occupation">
+                            <div class="error" style="color:red;" id="occupationErr"></div>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" class="form-control" id="nationality" name="nationality">
+                            <div class="error" style="color:red;" id="nationalityErr"></div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="gender">Gender</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+
+                            <div>
+                                <input type="radio" value="Male" name="gender">Male
+                            </div>
+
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <input type="radio" value="Female" name="gender">Female
+                        </div>
+                    </div>
+                    <div class="error" style="color:red;" id="genderErr"></div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="name">Categories</label>
+                            <select name="category" id="" class="form-control">
+                              <option value="" default >--Select Category--</option>
+                              <option value="Returnee">Returnee</option>
+                              <option value="Contact">Contact</option>
+                              <option value="Alert">Alert</option>
+                              <option value="Volunteer">Volunteer</option>
+
+
+                          </select>
+                            <div class="error" style="color:red;" id="categoryErr"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p align="right">
+
+                                <input type="submit" value="Submit" style="background-color:blue; color:white;">
+
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/bootstrapjs/popper.min.js "></script>
+    <script src="../public/js/bootstrapjs/jquery-3.5.1.slim.min.js "></script>
+    <script src="../public/js/bootstrapjs/bootstrap.js "></script>
+    <script src="../public/js/validation/validation.js"></script>
+</body>
+
+</html>
